@@ -1,0 +1,71 @@
+.center-tabs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //height: 100vh;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.pieChart{
+
+width: 300px;
+height: 300px;
+}
+
+.pieChartContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basicChartContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.baseChart{
+  width: 500px;
+//height: 500px;
+}
+
+.doughnutContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doughnut{
+  width: 500px;
+}
+
+.verticalBarContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verticalBar{
+  width: 700px;
+}
+
+.polarArea{
+  height: 500px;
+  width: 500px;
+}
+
+.polarAreaContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: brown;
+  margin-top: 2rem;
+}

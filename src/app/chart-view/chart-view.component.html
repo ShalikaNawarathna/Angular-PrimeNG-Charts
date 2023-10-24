@@ -1,0 +1,152 @@
+<div>
+  <div class="header">
+    <h2>PrimeNg Charts</h2>
+  </div>
+  <div class="center-tabs">
+    <p-tabView class="mt-20">
+    <p-tabPanel header="Basic Chart">
+  <p>A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+    chart and the options provide numerous customization options to customize the presentation.</p>
+  <div class = "basicChartContainer">
+    <div class="card baseChart">
+      <p-chart type="bar" [data]="basicData" [options]="basicOptions"></p-chart>
+  </div>
+  </div>
+  </p-tabPanel>
+    <p-tabPanel header="Pie Chart" class="">
+        <p>
+          A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+         chart and the options provide numerous customization options to customize the presentation.
+        A pie chart is a circular statistical graphic which is divided into slices to illustrate numerical proportion.
+        </p>
+       <div class = "pieChartContainer">
+        <div class="card flex justify-content-center pieChart">
+          <p-chart type="pie" [data]="pieChartData" [options]="pieChartOption"></p-chart>
+      </div>
+       </div>
+    </p-tabPanel>
+    <p-tabPanel header="Doughnut">
+        <p>
+          A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+          chart and the options provide numerous customization options to customize the presentation. A doughnut chart is a variant of the pie chart, with a blank center allowing for additional information about the data as a whole to be included.
+        </p>
+        <div class = "doughnutContainer">
+         <div class="card flex justify-content-center doughnut ">
+            <p-chart type="doughnut" [data]="doughnutData" [options]="doughnutOption"></p-chart>
+        </div>
+        </div>
+    </p-tabPanel>
+    <p-tabPanel header="Vertical Bar">
+      <p>
+        A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+        chart and the options provide numerous customization options to customize the presentation.
+          A bar chart or bar graph is a chart that presents grouped data with rectangular bars with lengths proportional to the values that they represent.
+      </p>
+      <div class = "verticalBarContainer">
+       <div class="card flex justify-content-center verticalBar ">
+          <p-chart type="bar" [data]="verticalData" [options]="verticalOption"></p-chart>
+      </div>
+      </div>
+  </p-tabPanel>
+  <p-tabPanel header="Horizontal Bar">
+    <p>
+      A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+      chart and the options provide numerous customization options to customize the presentation.
+      A bar chart is rendered horizontally when indexAxis option is set as y.
+    </p>
+    <div class = "verticalBarContainer">
+     <div class="card flex justify-content-center verticalBar ">
+        <p-chart type="bar" [data]="verticalData" [options]="horizontalOption"></p-chart>
+    </div>
+    </div>
+  </p-tabPanel>
+  <p-tabPanel header="Stacked Bar">
+    <p>
+      A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+      chart and the options provide numerous customization options to customize the presentation.
+      Bars can be stacked on top of each other when stacked option of a scale is enabled.
+    </p>
+    <div class = "verticalBarContainer">
+     <div class="card flex justify-content-center verticalBar ">
+        <p-chart type="bar" [data]="stackBarData" [options]="stackBarOption"></p-chart>
+    </div>
+    </div>
+  </p-tabPanel>
+  <p-tabPanel header="Line">
+    <p>
+      A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+      chart and the options provide numerous customization options to customize the presentation.
+      A line chart or line graph is a type of chart which displays information as a series of data points called 'markers' connected by straight line segments.
+    </p>
+    <div class = "verticalBarContainer">
+     <div class="card flex justify-content-center verticalBar ">
+        <p-chart type="line" [data]="lineData" [options]="lineOption"></p-chart>
+    </div>
+    </div>
+  </p-tabPanel>
+  <p-tabPanel header="MultiAxis">
+    <p>
+      A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+      chart and the options provide numerous customization options to customize the presentation.
+      Multiple axes can be added using the scales option.
+    </p>
+    <div class = "verticalBarContainer">
+     <div class="card flex justify-content-center verticalBar ">
+        <p-chart type="line" [data]="multiAxixData" [options]="multiAxisOption"></p-chart>
+    </div>
+    </div>
+  </p-tabPanel>
+  <p-tabPanel header="Line Styles">
+    <p>
+      A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+      chart and the options provide numerous customization options to customize the presentation.
+      Various styles of a line series can be customized to display customizations like an area chart.
+    </p>
+    <div class = "verticalBarContainer">
+     <div class="card flex justify-content-center verticalBar ">
+        <p-chart type="line" [data]="lineStyleData" [options]="lineStyleOption"></p-chart>
+    </div>
+    </div>
+  </p-tabPanel>
+  <p-tabPanel header="Polar Area" class = "">
+    <p>
+      A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+      chart and the options provide numerous customization options to customize the presentation.
+      Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value.
+    </p>
+    <div class = "polarAreaContainer">
+     <div class="card flex justify-content-center polarArea ">
+        <p-chart type="polarArea" [data]="polarData" [options]="polarOption"></p-chart>
+    </div>
+    </div>
+  </p-tabPanel>
+  <p-tabPanel header="Radar
+  " class = "">
+    <p>
+      A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+      chart and the options provide numerous customization options to customize the presentation.
+      A radar chart is a graphical method of displaying multivariate data in the form of a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point.
+    </p>
+    <div class = "polarAreaContainer">
+     <div class="card flex justify-content-center polarArea ">
+        <p-chart type="radar" [data]="radarData" [options]="polarOption"></p-chart>
+    </div>
+    </div>
+  </p-tabPanel>
+  <p-tabPanel header="Combo" class = "">
+    <p>
+      A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the
+      chart and the options provide numerous customization options to customize the presentation.
+      Different chart types can be combined in the same graph usign the type option of a dataset.
+    </p>
+    <div class = "polarAreaContainer">
+     <div class="card flex justify-content-center polarArea ">
+        <p-chart type="line" [data]="mixData" [options]="polarOption"></p-chart>
+    </div>
+    </div>
+  </p-tabPanel>
+  </p-tabView>
+
+  </div>
+
+</div>
